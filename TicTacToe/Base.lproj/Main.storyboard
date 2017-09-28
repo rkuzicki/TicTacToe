@@ -1,26 +1,111 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac Toe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fW-MM-HuT">
+                                <rect key="frame" x="82.5" y="28" width="155" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose game mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zh-Er-Ida">
+                                <rect key="frame" x="56.5" y="87" width="207" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcZ-cc-0ox">
+                                <rect key="frame" x="47" y="134" width="65" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="1 player"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asE-V6-X9f">
+                                <rect key="frame" x="205" y="133.5" width="68" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="2 player"/>
+                                <connections>
+                                    <segue destination="a48-nZ-95E" kind="show" id="bTg-Cc-LWj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="asE-V6-X9f" secondAttribute="trailing" constant="31" id="4sG-jV-qCJ"/>
+                            <constraint firstItem="6fW-MM-HuT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="8q2-gs-f15"/>
+                            <constraint firstItem="ZcZ-cc-0ox" firstAttribute="top" secondItem="5zh-Er-Ida" secondAttribute="bottom" constant="19.5" id="NAR-eO-YMZ"/>
+                            <constraint firstItem="5zh-Er-Ida" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vyz-P0-qhh"/>
+                            <constraint firstItem="ZcZ-cc-0ox" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="Wbv-7d-jBr"/>
+                            <constraint firstItem="5zh-Er-Ida" firstAttribute="top" secondItem="6fW-MM-HuT" secondAttribute="bottom" constant="22" id="Wx6-1U-LD0"/>
+                            <constraint firstItem="6fW-MM-HuT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bpf-sl-lyt"/>
+                            <constraint firstItem="asE-V6-X9f" firstAttribute="top" secondItem="5zh-Er-Ida" secondAttribute="bottom" constant="19" id="iLf-H6-MHQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-3679" y="-1242"/>
+        </scene>
+        <!--Two Players View Controller-->
+        <scene sceneID="SA7-5H-nCL">
+            <objects>
+                <viewController id="a48-nZ-95E" customClass="TwoPlayersViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bui-ed-4SH"/>
+                        <viewControllerLayoutGuide type="bottom" id="bmH-5T-5Mv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uso-1B-LMj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXG-cT-cY0">
+                                <rect key="frame" x="85.5" y="513" width="149" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Back to the menu"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="qL0-0a-njh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board_0.png" translatesAutoresizingMaskIntoConstraints="NO" id="YBM-k1-2Jn">
+                                <rect key="frame" x="0.0" y="104" width="320" height="360"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YBM-k1-2Jn" firstAttribute="centerX" secondItem="Uso-1B-LMj" secondAttribute="centerX" id="3jv-eQ-6jh"/>
+                            <constraint firstItem="bmH-5T-5Mv" firstAttribute="top" secondItem="gXG-cT-cY0" secondAttribute="bottom" constant="20" id="b3P-vx-Wfw"/>
+                            <constraint firstItem="YBM-k1-2Jn" firstAttribute="centerY" secondItem="Uso-1B-LMj" secondAttribute="centerY" id="dhj-Vk-5aQ"/>
+                            <constraint firstItem="gXG-cT-cY0" firstAttribute="centerX" secondItem="Uso-1B-LMj" secondAttribute="centerX" id="fR7-r5-S4g"/>
+                            <constraint firstItem="YBM-k1-2Jn" firstAttribute="width" secondItem="Uso-1B-LMj" secondAttribute="height" multiplier="40:71" id="v7O-9g-sbL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3n9-JA-8Xu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2775" y="-1242.2535211267607"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="board_0.png" width="360" height="360"/>
+    </resources>
 </document>
