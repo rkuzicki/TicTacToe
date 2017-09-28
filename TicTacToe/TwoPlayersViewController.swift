@@ -9,7 +9,19 @@
 import UIKit
 
 class TwoPlayersViewController: UIViewController {
-
+    
+    var crossTurn = true
+    @IBAction func buttonPressed(_ sender: AnyObject) {
+        if (crossTurn) {
+            sender.setImage(UIImage(named: "cross.png"), for: [])
+            crossTurn = false
+        }
+        else {
+            sender.setImage(UIImage(named: "circle.png"), for: [])
+            crossTurn = true
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
