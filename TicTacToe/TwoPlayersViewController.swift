@@ -13,19 +13,20 @@ class TwoPlayersViewController: UIViewController {
     var crossTurn = true
     @IBAction func buttonPressed(_ sender: AnyObject) {
         if (crossTurn) {
-            sender.setImage(UIImage(named: "cross.png"), for: [])
+            sender.setImage(UIImage(named: "cross.png")?.withRenderingMode(.alwaysTemplate), for: [])
+            (sender as? UIButton)?.tintColor = UIColor.red
             crossTurn = false
         }
         else {
-            sender.setImage(UIImage(named: "circle.png"), for: [])
+            sender.setImage(UIImage(named: "circle.png")?.withRenderingMode(.alwaysTemplate), for: [])
+            (sender as? UIButton)?.tintColor = UIColor.blue
             crossTurn = true
         }
+        (sender as? UIButton)?.isUserInteractionEnabled = false
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print("Game loaded")
     }
 
     override func didReceiveMemoryWarning() {
