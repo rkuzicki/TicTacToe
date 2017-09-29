@@ -33,7 +33,6 @@ class TwoPlayersViewController: UIViewController {
             if let button = view.viewWithTag(i) as? UIButton {
                 button.setImage(nil, for: [])
                 button.isUserInteractionEnabled = true
-                print(i)
             }
         }
         resultLabel.isHidden = true
