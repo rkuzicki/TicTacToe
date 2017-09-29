@@ -7,18 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1D27231F7E9CBA00F602D3 /* board_0.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1D27201F7E9CBA00F602D3 /* board_0.png */; };
+		BF1D27241F7E9CBA00F602D3 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1D27211F7E9CBA00F602D3 /* cross.png */; };
+		BF1D27251F7E9CBA00F602D3 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1D27221F7E9CBA00F602D3 /* circle.png */; };
 		BFCAD8F91F7AFE39006F8283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCAD8F81F7AFE39006F8283 /* AppDelegate.swift */; };
 		BFCAD8FB1F7AFE39006F8283 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCAD8FA1F7AFE39006F8283 /* MenuViewController.swift */; };
 		BFCAD8FE1F7AFE39006F8283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCAD8FC1F7AFE39006F8283 /* Main.storyboard */; };
 		BFCAD9001F7AFE39006F8283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCAD8FF1F7AFE39006F8283 /* Assets.xcassets */; };
 		BFCAD9031F7AFE39006F8283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCAD9011F7AFE39006F8283 /* LaunchScreen.storyboard */; };
-		BFFF61BF1F7D6F9C00EF9B04 /* board_0.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFF61BE1F7D6F9C00EF9B04 /* board_0.png */; };
-		BFFF61C11F7D702500EF9B04 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFF61C01F7D702500EF9B04 /* circle.png */; };
-		BFFF61C31F7D704400EF9B04 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFF61C21F7D704400EF9B04 /* cross.png */; };
 		BFFF61C51F7D72C700EF9B04 /* TwoPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF61C41F7D72C700EF9B04 /* TwoPlayersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF1D27201F7E9CBA00F602D3 /* board_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = board_0.png; path = ../../../../Desktop/board_0.png; sourceTree = "<group>"; };
+		BF1D27211F7E9CBA00F602D3 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cross.png; path = ../../../../Desktop/cross.png; sourceTree = "<group>"; };
+		BF1D27221F7E9CBA00F602D3 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = ../../../../Desktop/circle.png; sourceTree = "<group>"; };
 		BFCAD8F51F7AFE39006F8283 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCAD8F81F7AFE39006F8283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFCAD8FA1F7AFE39006F8283 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -26,9 +29,6 @@
 		BFCAD8FF1F7AFE39006F8283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFCAD9021F7AFE39006F8283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFCAD9041F7AFE39006F8283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFFF61BE1F7D6F9C00EF9B04 /* board_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = board_0.png; path = ../../../../Downloads/board_0.png; sourceTree = "<group>"; };
-		BFFF61C01F7D702500EF9B04 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = ../../../../Downloads/circle.png; sourceTree = "<group>"; };
-		BFFF61C21F7D704400EF9B04 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cross.png; path = ../../../../Downloads/cross.png; sourceTree = "<group>"; };
 		BFFF61C41F7D72C700EF9B04 /* TwoPlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoPlayersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,9 +77,9 @@
 		BFFF61BD1F7D6E0000EF9B04 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				BFFF61C21F7D704400EF9B04 /* cross.png */,
-				BFFF61C01F7D702500EF9B04 /* circle.png */,
-				BFFF61BE1F7D6F9C00EF9B04 /* board_0.png */,
+				BF1D27201F7E9CBA00F602D3 /* board_0.png */,
+				BF1D27211F7E9CBA00F602D3 /* cross.png */,
+				BF1D27221F7E9CBA00F602D3 /* circle.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -143,11 +143,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFFF61C31F7D704400EF9B04 /* cross.png in Resources */,
 				BFCAD9031F7AFE39006F8283 /* LaunchScreen.storyboard in Resources */,
-				BFFF61BF1F7D6F9C00EF9B04 /* board_0.png in Resources */,
-				BFFF61C11F7D702500EF9B04 /* circle.png in Resources */,
+				BF1D27251F7E9CBA00F602D3 /* circle.png in Resources */,
 				BFCAD9001F7AFE39006F8283 /* Assets.xcassets in Resources */,
+				BF1D27231F7E9CBA00F602D3 /* board_0.png in Resources */,
+				BF1D27241F7E9CBA00F602D3 /* cross.png in Resources */,
 				BFCAD8FE1F7AFE39006F8283 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
